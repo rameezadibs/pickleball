@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    background-color: #08090B;
+    color: #FFFFFF;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Athletic display heading helper */
+.font-athletic {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  line-height: 0.9;
+}
+
+/* Custom diagonal architectural cuts */
+.clip-diagonal-about {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+@media (min-width: 1024px) {
+  .clip-diagonal-about {
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
+  }
+}
+
+.clip-diagonal-enquiry {
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+}
+
+@media (min-width: 1024px) {
+  .clip-diagonal-enquiry {
+    clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);
+  }
+}
+
+.clip-corner-slash {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+/* Form input dark color scheme fix for native date/time pickers */
+.dark-picker {
+  color-scheme: dark;
+}
