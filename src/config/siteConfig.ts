@@ -64,7 +64,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'About', href: '#about' },
   { label: 'Coaching', href: '#ways-to-spark', presetService: 'Coaching Session' },
   { label: 'Packages', href: '#packages' },
-  { label: 'Book a Court', href: '#enquiry', presetService: 'Book a Court' },
+  { label: 'Book a Court', href: '#ways-to-spark', presetService: 'Book a Court' },
   { label: 'Community', href: '#community' },
   { label: 'FAQ', href: '#faq' },
 ];

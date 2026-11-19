@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { AthleticReveal } from './MotionPrimitives';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 interface WaysToSparkSectionProps {
-  onSelectService: (service: 'Book a Court' | 'Coaching Session') => void;
+  onSelectService?: (service: 'Book a Court' | 'Coaching Session') => void;
 }
 
 interface PanelData {
@@ -130,8 +131,14 @@ export function WaysToSparkSection({ onSelectService }: WaysToSparkSectionProps)
                   </p>
 
                   <a
-                    href="#enquiry"
-                    onClick={() => onSelectService(panel.service)}
+                    href={getWhatsAppUrl(
+                      panel.service === 'Book a Court'
+                        ? 'Hello SPARK Pickleball! I would like to book an indoor court.'
+                        : 'Hello SPARK Pickleball! I would like to enquire about coaching sessions.'
+                    )}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => onSelectService?.(panel.service)}
                     className={`inline-flex items-center gap-3 px-6 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-[0.14em] transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white ${index === 0
                         ? 'bg-[#ED1725] hover:bg-[#A60E19] text-white'
                         : 'border border-white/80 text-white hover:bg-white hover:text-[#08090B]'

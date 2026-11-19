@@ -2,9 +2,10 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { ATHLETIC_EASE } from './MotionPrimitives';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 interface HeroSectionProps {
-  onBookCourtClick: () => void;
+  onBookCourtClick?: () => void;
   onExploreCoachingClick?: () => void;
 }
 
@@ -24,7 +25,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
     <section
       id="home"
       ref={sectionRef}
-      className="relative min-h-[640px] h-[100svh] max-h-[960px] flex items-center bg-[#08090B] overflow-hidden pt-24 pb-16 lg:pt-28 lg:pb-24"
+      className="relative min-h-[640px] h-[100svh] max-h-[960px] flex items-center bg-[#08090B] overflow-hidden pt-32 pb-16 lg:pt-36 lg:pb-24"
     >
       {/* Background Photography with subtle initial zoom + desktop parallax */}
       <motion.div
@@ -96,7 +97,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
             initial={prefersReduced ? false : { opacity: 0.85, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, ease: ATHLETIC_EASE }}
-            className="flex items-center gap-3 mb-5"
+            className="flex items-center gap-3 mb-5 mt-4 sm:mt-6"
           >
             <span className="h-[2px] w-8 bg-[#ED1725]" aria-hidden="true" />
             <span className="text-xs sm:text-[0.8125rem] font-semibold uppercase tracking-[0.26em] text-[#C5C8CE]">
@@ -153,7 +154,9 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
             className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
           >
             <a
-              href="#enquiry"
+              href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to book an indoor court.')}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={onBookCourtClick}
               className="group inline-flex items-center justify-center gap-3 bg-[#ED1725] hover:bg-[#A60E19] text-white px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
@@ -166,7 +169,9 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
             </a>
 
             <a
-              href="#coaching"
+              href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to explore your indoor coaching packages.')}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={onExploreCoachingClick}
               className="group inline-flex items-center justify-center gap-3 bg-[#ED1725] hover:bg-[#A60E19] text-white px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >

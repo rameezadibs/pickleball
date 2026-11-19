@@ -8,12 +8,13 @@ import {
   COACHING_PACKAGES,
 } from '../config/packagesData';
 import { ATHLETIC_EASE, AthleticReveal } from './MotionPrimitives';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 interface PackagesSectionProps {
-  onSelectPackage: (pkg: PackageItem) => void;
+  onSelectPackage?: (pkg: PackageItem) => void;
 }
 
-export function PackagesSection({ onSelectPackage }: PackagesSectionProps) {
+export function PackagesSection({ onSelectPackage }: PackagesSectionProps = {}) {
   const [activeCategory, setActiveCategory] =
     useState<PackageCategoryId>('court');
   const [hoveredPackageId, setHoveredPackageId] = useState<string | null>(null);
@@ -23,11 +24,9 @@ export function PackagesSection({ onSelectPackage }: PackagesSectionProps) {
     activeCategory === 'court' ? COURT_PACKAGES : COACHING_PACKAGES;
 
   const handleCtaClick = (pkg: PackageItem) => {
-    onSelectPackage(pkg);
-    const target = document.getElementById('enquiry');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
+    onSelectPackage?.(pkg);
+    const msg = `Hello SPARK Pickleball! I would like to enquire about the ${pkg.name} package (${pkg.serviceTarget}).`;
+    window.open(getWhatsAppUrl(msg), '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -333,10 +332,12 @@ export function PackagesSection({ onSelectPackage }: PackagesSectionProps) {
             All packages are subject to court availability and session confirmation.
           </p>
           <a
-            href="#enquiry"
+            href={getWhatsAppUrl('Hello SPARK Pickleball! I have a custom enquiry regarding indoor courts and coaching.')}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition-colors underline decoration-white/30 underline-offset-4"
           >
-            Have a custom requirement? Talk to our team &rarr;
+            Have a custom requirement? Talk to our team on WhatsApp &rarr;
           </a>
         </div>
       </div>

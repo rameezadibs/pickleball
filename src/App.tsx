@@ -8,6 +8,7 @@ import { WhySparkSection } from './components/WhySparkSection';
 import { CommunitySection } from './components/CommunitySection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
+import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
 
 export function App() {
   const scrollToPackages = () => {
@@ -41,6 +42,7 @@ export function App() {
         </main>
 
         <Footer />
+        <WhatsAppFloatingButton />
       </div>
     </MotionConfig>
   );

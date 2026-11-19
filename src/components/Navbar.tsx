@@ -4,6 +4,7 @@ import { ArrowRight, Menu, X } from 'lucide-react';
 import { NAV_ITEMS, NavItem, siteConfig } from '../config/siteConfig';
 import { BrandLogo } from './BrandLogo';
 import { ATHLETIC_EASE } from './MotionPrimitives';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 interface NavbarProps {
   onNavigateService?: (service: string) => void;
@@ -83,7 +84,9 @@ export function Navbar({ onNavigateService }: NavbarProps = {}) {
           {/* Right: Book Now CTA + Mobile Hamburger */}
           <div className="flex items-center gap-4">
             <a
-              href="#enquiry"
+              href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to book an indoor court.')}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => onNavigateService?.('Book a Court')}
               className="hidden sm:inline-flex items-center gap-2 bg-[#ED1725] hover:bg-[#A60E19] text-white px-5 py-2.5 text-[0.8125rem] font-semibold uppercase tracking-[0.1em] transition-colors duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
@@ -148,7 +151,9 @@ export function Navbar({ onNavigateService }: NavbarProps = {}) {
 
             <div className="pt-8 space-y-5">
               <a
-                href="#enquiry"
+                href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to book an indoor court.')}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => {
                   setMobileOpen(false);
                   onNavigateService?.('Book a Court');

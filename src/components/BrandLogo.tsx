@@ -19,7 +19,7 @@ export function BrandLogo({ className = '', size = 'nav' }: BrandLogoProps) {
   const hasLogoAsset = Boolean(siteConfig.brand.logoSrc) && !imgError;
 
   const heightClasses =
-    size === 'nav' ? 'h-14 sm:h-20 md:h-24' : 'h-16 sm:h-20 md:h-24';
+    size === 'nav' ? 'h-12 sm:h-16 md:h-20' : 'h-14 sm:h-16 md:h-20';
 
   if (hasLogoAsset) {
     return (
@@ -27,7 +27,7 @@ export function BrandLogo({ className = '', size = 'nav' }: BrandLogoProps) {
         src={siteConfig.brand.logoSrc}
         alt={siteConfig.brand.logoAlt}
         onError={() => setImgError(true)}
-        className={`${heightClasses} w-auto max-w-[280px] sm:max-w-[380px] md:max-w-[440px] object-contain select-none ${className}`}
+        className={`${heightClasses} w-auto max-w-[240px] sm:max-w-[320px] md:max-w-[360px] object-contain select-none ${className}`}
         draggable={false}
       />
     );

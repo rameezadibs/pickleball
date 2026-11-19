@@ -1,4 +1,5 @@
 import { AthleticReveal, ImageMaskReveal } from './MotionPrimitives';
+import { getWhatsAppUrl } from '../utils/whatsapp';
 
 export function CommunitySection() {
   return (
@@ -62,7 +63,9 @@ export function CommunitySection() {
               </p>
 
               <a
-                href="#enquiry"
+                href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to join the SPARK community and play on court.')}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-white hover:text-[#ED1725] transition-colors duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ED1725]"
               >
                 <span className="h-[1px] w-8 bg-[#ED1725] transition-all duration-300 group-hover:w-12" />
