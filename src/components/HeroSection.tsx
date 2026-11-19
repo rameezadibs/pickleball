@@ -33,7 +33,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
       >
         <motion.img
           src="/images/hero-court.jpg"
-          alt="Professional blue pickleball court in Dubai at sunset with floodlights, Dubai skyline, black-and-red paddle, and red pickleball near the net"
+          alt="Premium indoor pickleball court at SPARK in Dubai with professional lighting, black-and-red paddle, and red pickleball"
           initial={prefersReduced ? false : { scale: 1.05 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.1, ease: ATHLETIC_EASE }}
@@ -100,7 +100,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
           >
             <span className="h-[2px] w-8 bg-[#ED1725]" aria-hidden="true" />
             <span className="text-xs sm:text-[0.8125rem] font-semibold uppercase tracking-[0.26em] text-[#C5C8CE]">
-              PICKLEBALL IN DUBAI
+              INDOOR PICKLEBALL IN DUBAI
             </span>
           </motion.div>
 
@@ -141,8 +141,8 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
             transition={{ duration: 0.5, delay: 0.26, ease: ATHLETIC_EASE }}
             className="text-sm sm:text-base md:text-[1.0625rem] leading-relaxed text-[#C5C8CE] max-w-xl mb-9"
           >
-            Dubai&apos;s destination for pickleball — bringing together quality courts,
-            expert coaching, and a growing community of players at every level.
+            Dubai&apos;s premier indoor pickleball destination — climate-controlled quality courts,
+            expert coaching, and a thriving community of players at every level.
           </motion.p>
 
           {/* Dual CTAs */}

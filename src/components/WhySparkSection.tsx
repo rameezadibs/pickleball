@@ -4,23 +4,23 @@ import { ATHLETIC_EASE } from './MotionPrimitives';
 
 const FEATURES = [
   {
-    title: 'Quality Courts',
-    description: 'A great setting for every rally.',
+    title: 'Indoor AC Courts',
+    description: 'Fully climate-controlled courts for year-round comfort in Dubai.',
     Icon: LayoutGrid,
   },
   {
     title: 'Dedicated Coaching',
-    description: 'Learn, practise, and improve.',
+    description: 'Learn, practise, and improve with tailored sessions.',
     Icon: Target,
   },
   {
     title: 'All Skill Levels',
-    description: 'From first-timers to experienced players.',
+    description: 'From first-timers to competitive tournament players.',
     Icon: Activity,
   },
   {
     title: 'Growing Community',
-    description: 'More than matches — genuine connections.',
+    description: 'More than matches — genuine connections on and off court.',
     Icon: Users,
   },
 ] as const;

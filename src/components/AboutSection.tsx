@@ -39,7 +39,7 @@ export function AboutSection() {
             <div className="relative w-full h-full min-h-[380px] sm:min-h-[460px] lg:min-h-[640px] clip-diagonal-about overflow-hidden">
               <img
                 src="/images/about-overhead.jpg"
-                alt="Elevated view of two players competing in a pickleball rally on a blue-and-red court"
+                alt="Elevated overhead view of an indoor pickleball rally in progress"
                 className="w-full h-full object-cover object-center"
                 loading="lazy"
               />
@@ -90,10 +90,10 @@ export function AboutSection() {
                 </h2>
 
                 <p className="text-[0.9375rem] sm:text-base leading-relaxed text-[#111216]/80 max-w-md">
-                  SPARK Pickleball brings together the excitement of the game, a welcoming
-                  community, and opportunities to improve your skills. Whether you&apos;re
-                  picking up a paddle for the first time or returning for your next
-                  competitive match, there&apos;s a place for you on the court.
+                  SPARK Pickleball brings Dubai the ultimate indoor pickleball experience — fully
+                  climate-controlled, world-class court surfaces, and a welcoming community.
+                  Whether you&apos;re picking up a paddle for the first time or returning for your next
+                  competitive match, there&apos;s a place for you on our courts all year round.
                 </p>
               </AthleticReveal>
             </div>

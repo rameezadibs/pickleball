@@ -40,7 +40,7 @@ export const siteConfig: SiteConfig = {
     phone: '+971 54 140 0964',
     phoneRaw: '+971541400964',
     mapUrl: 'https://maps.google.com/?q=132+Abu+Baker+Al+Siddique+St+-+Al+Muraqqabat+-+Deira+-+Dubai',
-    logoSrc: '',
+    logoSrc: '/images/logo.png',
     logoAlt: 'SPARK Pickleball Logo',
   },
   bookingIntegration: {
@@ -77,33 +77,39 @@ export interface FaqItem {
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
+    id: 'indoor-facility',
+    question: 'Are SPARK Pickleball courts indoor and air-conditioned?',
+    answer:
+      'Yes! SPARK is a 100% indoor, fully air-conditioned facility located in Deira, Dubai. You can play comfortably year-round regardless of outdoor heat or weather conditions.',
+  },
+  {
     id: 'experience',
     question: 'Do I need prior experience to play?',
     answer:
-      'Not at all. Pickleball is quick to pick up from your very first rally, and SPARK welcomes complete beginners alongside regular players. Simply share your level in the enquiry form and we will point you to the right court or session.',
+      'Not at all. Pickleball is quick to pick up from your very first rally, and SPARK welcomes complete beginners alongside regular players. Simply get in touch and we will point you to the right court or session.',
   },
   {
     id: 'group-booking',
     question: 'Can I book a court for a group?',
     answer:
-      'Yes. Whether you are planning a casual doubles match with friends or bringing a larger crew together, send through a court booking enquiry with your preferred details and our team will assist with the setup.',
+      'Yes. Whether you are planning a casual doubles match with friends or bringing a larger crew together, reach out with your preferred details and our team will assist with the indoor court setup.',
   },
   {
     id: 'coaching-options',
     question: 'What coaching options are available?',
     answer:
-      'SPARK offers coaching tailored to your stage of play — from building core fundamentals and court positioning to sharpening match strategy and consistency. Select Coaching Session in the enquiry form or check our Coaching Packages to choose your pathway.',
+      'SPARK offers indoor coaching tailored to your stage of play — from building core fundamentals and court positioning to sharpening match strategy and consistency. Check our Coaching Packages to choose your pathway.',
   },
   {
     id: 'beginner-coaching',
     question: 'Can beginners join coaching sessions?',
     answer:
-      'Yes — beginners are warmly encouraged to join coaching. Our First Spark package and Beginner skill level option are specifically designed to give you confidence and proper technique from day one.',
+      'Yes — beginners are warmly encouraged to join coaching. Our First Spark package and Beginner options are specifically designed to give you confidence and proper technique from day one.',
   },
   {
     id: 'court-availability',
     question: 'How can I enquire about court availability?',
     answer:
-      'Use the Booking Enquiry form below, reach out via WhatsApp or phone at +971 54 140 0964, or visit us at 132 Abu Baker Al Siddique St, Al Muraqqabat, Deira, Dubai. Our team will coordinate available court slots and session timings with you immediately.',
+      'Reach out via WhatsApp or call us at +971 54 140 0964, or visit our indoor facility at 132 Abu Baker Al Siddique St, Al Muraqqabat, Deira, Dubai. Our team will coordinate available court slots and session timings with you immediately.',
   },
 ];

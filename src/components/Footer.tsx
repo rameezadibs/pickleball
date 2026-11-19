@@ -95,7 +95,7 @@ export function Footer() {
           <p>
             &copy; {currentYear} {siteConfig.brand.name}. All rights reserved.
           </p>
-          <p>Pickleball Court Bookings &amp; Coaching &mdash; {siteConfig.brand.location}</p>
+          <p>Indoor Pickleball Court Bookings &amp; Coaching &mdash; {siteConfig.brand.location}</p>
         </div>
       </div>
     </footer>

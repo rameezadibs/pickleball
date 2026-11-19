@@ -24,14 +24,14 @@ const PANELS: PanelData[] = [
     id: 'court-booking',
     key: 'court',
     service: 'Book a Court',
-    label: 'COURT BOOKING',
+    label: 'INDOOR COURT BOOKING',
     headingLine1: 'RESERVE',
     headingLine2: 'YOUR COURT.',
     description:
-      'Your next rally starts here. Find your court, bring your crew, and make every game count.',
+      'Beat the Dubai heat on our air-conditioned indoor courts. Find your court, bring your crew, and make every rally count.',
     ctaLabel: 'Book a Court',
     imageSrc: '/images/panel-court-booking.jpg',
-    imageAlt: 'Dramatic floodlit blue pickleball court with a red pickleball near the net',
+    imageAlt: 'High-performance indoor pickleball court with professional lighting and red pickleball near the net',
   },
   {
     id: 'coaching',
