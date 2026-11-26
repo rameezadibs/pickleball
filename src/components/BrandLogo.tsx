@@ -37,7 +37,7 @@ export function BrandLogo({ className = '', size = 'nav' }: BrandLogoProps) {
   return (
     <span
       className={`inline-flex items-baseline gap-2 select-none ${className}`}
-      aria-label="SPARK Pickleball"
+      aria-label="SPARK Pickleball Lab"
     >
       <span
         className={`font-athletic text-white tracking-[-0.03em] leading-none ${

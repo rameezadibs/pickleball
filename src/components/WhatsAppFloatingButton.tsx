@@ -5,7 +5,7 @@ export function WhatsAppFloatingButton() {
   const prefersReduced = useReducedMotion();
   const rawNumber = siteConfig.brand.phoneRaw.replace('+', '');
   const defaultText = encodeURIComponent(
-    'Hello SPARK Pickleball! I would like to enquire about indoor court booking and coaching.'
+    'Hello SPARK Pickleball Lab! I would like to enquire about indoor court booking and coaching.'
   );
   const whatsappUrl = `https://wa.me/${rawNumber}?text=${defaultText}`;
 
@@ -18,7 +18,7 @@ export function WhatsAppFloatingButton() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat with SPARK Pickleball on WhatsApp"
+        aria-label="Chat with SPARK Pickleball Lab on WhatsApp"
         initial={prefersReduced ? false : { scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.6, type: 'spring', stiffness: 260, damping: 20 }}

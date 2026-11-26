@@ -90,7 +90,7 @@ export function AboutSection() {
                 </h2>
 
                 <p className="text-[0.9375rem] sm:text-base leading-relaxed text-[#111216]/80 max-w-md">
-                  SPARK Pickleball brings Dubai the ultimate indoor pickleball experience — fully
+                  SPARK Pickleball Lab brings Dubai the ultimate indoor pickleball experience — fully
                   climate-controlled, world-class court surfaces, and a welcoming community.
                   Whether you&apos;re picking up a paddle for the first time or returning for your next
                   competitive match, there&apos;s a place for you on our courts all year round.

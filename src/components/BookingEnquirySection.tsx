@@ -250,7 +250,7 @@ export function BookingEnquirySection({
 
   const handleCopySummary = async (payload: FormValues) => {
     const summaryText = [
-      'SPARK Pickleball — Booking Enquiry',
+      'SPARK Pickleball Lab — Booking Enquiry',
       `Name: ${payload.fullName}`,
       `Email: ${payload.email}`,
       `Phone: ${payload.phone}`,
@@ -274,7 +274,7 @@ export function BookingEnquirySection({
   };
 
   const whatsappUrl = `https://wa.me/${siteConfig.brand.phoneRaw.replace('+', '')}?text=${encodeURIComponent(
-    `Hello SPARK Pickleball! I would like to enquire about ${values.selectedPackage || values.service}.`
+    `Hello SPARK Pickleball Lab! I would like to enquire about ${values.selectedPackage || values.service}.`
   )}`;
 
   const inputBaseClass =

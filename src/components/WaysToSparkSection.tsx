@@ -133,8 +133,8 @@ export function WaysToSparkSection({ onSelectService }: WaysToSparkSectionProps)
                   <a
                     href={getWhatsAppUrl(
                       panel.service === 'Book a Court'
-                        ? 'Hello SPARK Pickleball! I would like to book an indoor court.'
-                        : 'Hello SPARK Pickleball! I would like to enquire about coaching sessions.'
+                        ? 'Hello SPARK Pickleball Lab! I would like to book an indoor court.'
+                        : 'Hello SPARK Pickleball Lab! I would like to enquire about coaching sessions.'
                     )}
                     target="_blank"
                     rel="noopener noreferrer"

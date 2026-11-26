@@ -59,6 +59,53 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,700;1,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet" />
+
+  <!-- Structured Data: WebSite & SportsActivityLocation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.sparkpickleballlab.com/#website",
+        "url": "https://www.sparkpickleballlab.com/",
+        "name": "SPARK Pickleball Lab",
+        "description": "Dubai's premier indoor pickleball destination with climate-controlled courts, expert coaching, and player community.",
+        "inLanguage": "en-AE"
+      },
+      {
+        "@type": "SportsActivityLocation",
+        "@id": "https://www.sparkpickleballlab.com/#location",
+        "name": "SPARK Pickleball Lab",
+        "image": "https://www.sparkpickleballlab.com/images/logo.png",
+        "url": "https://www.sparkpickleballlab.com/",
+        "telephone": "+971541400964",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "132 Abu Baker Al Siddique St - Al Muraqqabat",
+          "addressLocality": "Deira",
+          "addressRegion": "Dubai",
+          "addressCountry": "AE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "25.2697",
+          "longitude": "55.3283"
+        },
+        "hasMap": "https://maps.google.com/?q=132+Abu+Baker+Al+Siddique+St+-+Al+Muraqqabat+-+Deira+-+Dubai",
+        "sport": "Pickleball",
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Indoor Air-Conditioned Courts",
+            "value": true
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body class="bg-[#08090B] text-white antialiased selection:bg-[#ED1725] selection:text-white overflow-x-hidden">

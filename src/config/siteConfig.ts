@@ -34,14 +34,14 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   brand: {
-    name: 'SPARK Pickleball',
+    name: 'SPARK Pickleball Lab',
     location: 'Dubai, UAE',
     address: '132 Abu Baker Al Siddique St - Al Muraqqabat - Deira - Dubai',
     phone: '+971 54 140 0964',
     phoneRaw: '+971541400964',
     mapUrl: 'https://maps.google.com/?q=132+Abu+Baker+Al+Siddique+St+-+Al+Muraqqabat+-+Deira+-+Dubai',
     logoSrc: '/images/logo.png',
-    logoAlt: 'SPARK Pickleball Logo',
+    logoAlt: 'SPARK Pickleball Lab Logo',
   },
   bookingIntegration: {
     endpoint: import.meta.env.VITE_BOOKING_API_URL || '',
@@ -78,9 +78,9 @@ export interface FaqItem {
 export const FAQ_ITEMS: FaqItem[] = [
   {
     id: 'indoor-facility',
-    question: 'Are SPARK Pickleball courts indoor and air-conditioned?',
+    question: 'Are SPARK Pickleball Lab courts indoor and air-conditioned?',
     answer:
-      'Yes! SPARK is a 100% indoor, fully air-conditioned facility located in Deira, Dubai. You can play comfortably year-round regardless of outdoor heat or weather conditions.',
+      'Yes! SPARK Pickleball Lab is a 100% indoor, fully air-conditioned facility located in Deira, Dubai. You can play comfortably year-round regardless of outdoor heat or weather conditions.',
   },
   {
     id: 'experience',

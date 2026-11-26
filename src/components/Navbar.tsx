@@ -84,7 +84,7 @@ export function Navbar({ onNavigateService }: NavbarProps = {}) {
           {/* Right: Book Now CTA + Mobile Hamburger */}
           <div className="flex items-center gap-4">
             <a
-              href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to book an indoor court.')}
+              href={getWhatsAppUrl('Hello SPARK Pickleball Lab! I would like to book an indoor court.')}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => onNavigateService?.('Book a Court')}
@@ -151,7 +151,7 @@ export function Navbar({ onNavigateService }: NavbarProps = {}) {
 
             <div className="pt-8 space-y-5">
               <a
-                href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to book an indoor court.')}
+                href={getWhatsAppUrl('Hello SPARK Pickleball Lab! I would like to book an indoor court.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {

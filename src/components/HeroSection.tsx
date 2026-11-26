@@ -34,7 +34,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
       >
         <motion.img
           src="/images/hero-court.jpg"
-          alt="Premium indoor pickleball court at SPARK in Dubai with professional lighting, black-and-red paddle, and red pickleball"
+          alt="Premium indoor pickleball court at SPARK Pickleball Lab in Dubai with professional lighting, black-and-red paddle, and red pickleball"
           initial={prefersReduced ? false : { scale: 1.05 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.1, ease: ATHLETIC_EASE }}
@@ -154,7 +154,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
             className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
           >
             <a
-              href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to book an indoor court.')}
+              href={getWhatsAppUrl('Hello SPARK Pickleball Lab! I would like to book an indoor court.')}
               target="_blank"
               rel="noopener noreferrer"
               onClick={onBookCourtClick}
@@ -169,7 +169,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
             </a>
 
             <a
-              href={getWhatsAppUrl('Hello SPARK Pickleball! I would like to explore your indoor coaching packages.')}
+              href={getWhatsAppUrl('Hello SPARK Pickleball Lab! I would like to explore your indoor coaching packages.')}
               target="_blank"
               rel="noopener noreferrer"
               onClick={onExploreCoachingClick}

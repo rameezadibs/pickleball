@@ -25,7 +25,7 @@ export function PackagesSection({ onSelectPackage }: PackagesSectionProps = {}) 
 
   const handleCtaClick = (pkg: PackageItem) => {
     onSelectPackage?.(pkg);
-    const msg = `Hello SPARK Pickleball! I would like to enquire about the ${pkg.name} package (${pkg.serviceTarget}).`;
+    const msg = `Hello SPARK Pickleball Lab! I would like to enquire about the ${pkg.name} package (${pkg.serviceTarget}).`;
     window.open(getWhatsAppUrl(msg), '_blank', 'noopener,noreferrer');
   };
 
@@ -332,7 +332,7 @@ export function PackagesSection({ onSelectPackage }: PackagesSectionProps = {}) 
             All packages are subject to court availability and session confirmation.
           </p>
           <a
-            href={getWhatsAppUrl('Hello SPARK Pickleball! I have a custom enquiry regarding indoor courts and coaching.')}
+            href={getWhatsAppUrl('Hello SPARK Pickleball Lab! I have a custom enquiry regarding indoor courts and coaching.')}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors underline decoration-white/30 underline-offset-4"
