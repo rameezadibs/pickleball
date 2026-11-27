@@ -101,7 +101,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
           >
             <span className="h-[2px] w-8 bg-[#ED1725]" aria-hidden="true" />
             <span className="text-xs sm:text-[0.8125rem] font-semibold uppercase tracking-[0.26em] text-[#C5C8CE]">
-              INDOOR PICKLEBALL IN DUBAI
+              SPARK PICKLEBALL LAB — DUBAI
             </span>
           </motion.div>
 
@@ -142,8 +142,7 @@ export function HeroSection({ onBookCourtClick, onExploreCoachingClick }: HeroSe
             transition={{ duration: 0.5, delay: 0.26, ease: ATHLETIC_EASE }}
             className="text-sm sm:text-base md:text-[1.0625rem] leading-relaxed text-[#C5C8CE] max-w-xl mb-9"
           >
-            Dubai&apos;s premier indoor pickleball destination — climate-controlled quality courts,
-            expert coaching, and a thriving community of players at every level.
+            SPARK Pickleball Lab is Dubai&apos;s indoor pickleball destination, offering fully air-conditioned courts in Deira, dedicated coaching, and a welcoming community for players of all skill levels.
           </motion.p>
 
           {/* Dual CTAs */}

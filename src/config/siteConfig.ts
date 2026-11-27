@@ -80,7 +80,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     id: 'indoor-facility',
     question: 'Are SPARK Pickleball Lab courts indoor and air-conditioned?',
     answer:
-      'Yes! SPARK Pickleball Lab is a 100% indoor, fully air-conditioned facility located in Deira, Dubai. You can play comfortably year-round regardless of outdoor heat or weather conditions.',
+      'Yes! SPARK Pickleball Lab is a fully indoor, air-conditioned pickleball facility located in Deira, Dubai, offering comfortable year-round play, court bookings, and coaching.',
   },
   {
     id: 'experience',
